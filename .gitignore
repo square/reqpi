@@ -1,0 +1,6 @@
+*.pyc
+.coverage
+dropin.cache
+build/
+dist/
+*.egg-info/

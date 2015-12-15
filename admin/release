@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import glob
+import os
+import shutil
+import subprocess
+import sys
+
+TAG=sys.argv[1]
+
+subprocess.check_call(['tox'])
+subprocess.check_call(['git', 'tag', TAG])
+try:
+    subprocess.check_call(['tox'])
+except subprocess.CalledProcessError:
+    subprocess.check_call(['git', 'tag', '-d', TAG])
+    sys.exit('Failed, untagging')
+
+if os.path.exists('dist'):
+    shutil.rmtree('dist')
+os.mkdir('dist')
+
+for pattern in ['build/tox/dist/*.zip', 'build/tox/py27-wheel/tmp/*.whl', 'build/tox/pex/tmp/reqpi-*']:
+    for fname in glob.glob(pattern):
+        shutil.copy(fname, 'dist')

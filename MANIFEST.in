@@ -1,0 +1,3 @@
+include versioneer.py
+include README.rst
+include reqpi/_version.py
