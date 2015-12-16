@@ -1,6 +1,9 @@
 reqpi
 =====
 
+.. image:: https://travis-ci.org/square/reqpi.svg?branch=master
+    :target: https://travis-ci.org/square/reqpi
+
 The build-friendly PyPI fake.
 
 Introduction
