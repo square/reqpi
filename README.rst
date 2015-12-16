@@ -7,6 +7,9 @@ reqpi
 .. image:: https://readthedocs.org/projects/reqpi/badge/?version=latest
     :target: http://reqpi.readthedocs.org/en/latest/?badge=latest
 
+.. image:: https://badge.fury.io/py/reqpi.svg
+    :target: https://badge.fury.io/py/reqpi
+
 The build-friendly PyPI fake.
 
 Introduction
