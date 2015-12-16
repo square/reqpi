@@ -4,6 +4,9 @@ reqpi
 .. image:: https://travis-ci.org/square/reqpi.svg?branch=master
     :target: https://travis-ci.org/square/reqpi
 
+.. image:: https://readthedocs.org/projects/reqpi/badge/?version=latest
+    :target: http://reqpi.readthedocs.org/en/latest/?badge=latest
+
 The build-friendly PyPI fake.
 
 Introduction
